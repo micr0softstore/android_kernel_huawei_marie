@@ -237,6 +237,5 @@ config HISI_RO_LSM_HOOKS
           Protects the security huulks from further modifications, after init.
 
 source security/kernel_harden/Kconfig
-source security/check_root/Kconfig
 endmenu
 
