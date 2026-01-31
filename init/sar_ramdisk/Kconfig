@@ -7,10 +7,7 @@ config ANDROID_SAR_RAMDISK
 	  Useful if your bootloader doesn't load
 	  the ramdisk.
 
-if ANDROID_SAR_RAMDISK
-
 config ANDROID_BOOT_PARTITION
 	string "Android boot partition"
 	default "/dev/mmcblk0p43"
-
-endif
+	depends on ANDROID_SAR_RAMDISK
