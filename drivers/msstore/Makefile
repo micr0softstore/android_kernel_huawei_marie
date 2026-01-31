@@ -1,0 +1,1 @@
+obj-$(CONFIG_MSSTORE_LASTKMSG) += last_kmsg.o

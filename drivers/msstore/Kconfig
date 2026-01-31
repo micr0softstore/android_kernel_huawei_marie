@@ -1,0 +1,11 @@
+config MSSTORE_LASTKMSG
+    bool "Persistent last_kmsg RAM crash logger"
+    depends on PRINTK && PANIC_NOTIFIER && OF
+    default n
+    help
+      This driver reserves a RAM buffer and records kernel printk
+      output into it. When the kernel panics or userspace triggers
+      a fatal reboot, the buffer is frozen and can be read back
+      from /dev/last_kmsg on the next boot.
+
+      Similar to Samsung last_kmsg and Android pstore RAM backends.
