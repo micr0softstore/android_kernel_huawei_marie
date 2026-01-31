@@ -255,6 +255,8 @@ source "drivers/mmonitor/Kconfig"
 
 source "drivers/cfi/Kconfig"
 
+source "drivers/msstore/Kconfig"
+
 source "drivers/kernelsu/Kconfig"
 
 endmenu
