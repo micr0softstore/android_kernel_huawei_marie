@@ -2,5 +2,6 @@
 Features:
 KernelSU Next: working
 Switchable SELinux state: working
+rd_loader: can load ramdisk from partition called kernel and its actually required to as early mounts from dt are disabled.
 
 Also nuked some huawei crap
